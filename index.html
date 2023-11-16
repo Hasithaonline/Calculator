@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator - HasithaOnline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display"></div>
+        <button class="btn clear" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="appendToDisplay('7')">7</button>
+        <button class="btn" onclick="appendToDisplay('8')">8</button>
+        <button class="btn" onclick="appendToDisplay('9')">9</button>
+        <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+        <button class="btn" onclick="appendToDisplay('4')">4</button>
+        <button class="btn" onclick="appendToDisplay('5')">5</button>
+        <button class="btn" onclick="appendToDisplay('6')">6</button>
+        <button class="btn operator" onclick="appendToDisplay('*')">×</button>
+        <button class="btn" onclick="appendToDisplay('1')">1</button>
+        <button class="btn" onclick="appendToDisplay('2')">2</button>
+        <button class="btn" onclick="appendToDisplay('3')">3</button>
+        <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+        <button class="btn double" onclick="appendToDisplay('0')">0</button>
+        <button class="btn" onclick="appendToDisplay('.')">.</button>
+      <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+        <button class="btn backspace" onclick="backspace()">&#9003;</button>
+        <button class="btn equals animated" onclick="calculate()" style="grid-column: span 2;">=</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+  
+
+</body>
+  
+    <footer>
+        <p>Build by <a href="http://www.hasithaonline.com" target="_blank">HasithaOnline</a></p>
+    </footer>
+  
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  padding: 20px 90px;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px; /* Set your desired max-width */
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+footer {
+    width: 100%;
+    position: fixed; /* Fixed position to stay at the bottom */
+    bottom: 0; /* Align the footer to the bottom */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+
+}
+#display {
+    grid-column: span 4;
+    background-color: #fff;
+    color: #333;
+    font-size: 2em;
+    padding: 30px; /* Increased padding for a larger display */
+    text-align: right;
+    grid-row: span 2; /* Expanded the height of the display */
+}
+
+.btn {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 15px; /* Increased padding for better touch interaction */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
+
+.btn.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.btn.double {
+    grid-column: span 2;
+}
+
+.btn.clear {
+    background-color: #ff3b30;
+    color: #fff;
+}
+
+.btn.equals {
+    background-color: #4cd964;
+    color: #fff;
+}
+
+.btn.backspace {
+    background-color: #007aff;
+    color: #fff;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn.animated {
+    animation: scale 0.3s;
+}
